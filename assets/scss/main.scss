@@ -14,7 +14,8 @@ scss/
 |   |– _forms.scss       # Forms and elements
 |   |– _fudge.scss       # Overrides
 |   |– _tables.scss      # Reset/normalize
-|   `– _typography.scss  # Typography rules
+|   |– _typography.scss  # Typography rules
+|   `– _print.scss       # Print rules
 |
 |– abstracts/
 |   |– _variables.scss   # Sass Variables
@@ -83,6 +84,8 @@ scss/
 @import 'base/fudge';
 @import 'base/tables';
 @import 'base/typography';
+@import 'base/print';
+
 
 // --------------------------------------------------------------------------
 // >> Partials
