@@ -1,4 +1,3 @@
-
 @charset 'utf-8';
 
 // --------------------------------------------------------------------------
@@ -26,9 +25,7 @@ scss/
 |– compatibility/
 |   `– ms/
 |   |   |- _ie11.scss    # Internet Explorer 11 Compatibility
-|   |   |- _ie10.scss    # Internet Explorer 10 Compatibility
-|   |   |- _ie9.scss     # Internet Explorer 9 Compatibility
-|   |   `– _ie8.scss     # Internet Explorer 8 Compatibility
+|   |   `–  _ie10.scss    # Internet Explorer 10 Compatibility
 |   |
 |   |– _chrome.scss      # Chrome Compatibility
 |   |– _ff.scss          # Firefox Compatiblity
@@ -86,7 +83,6 @@ scss/
 @import 'base/typography';
 @import 'base/print';
 
-
 // --------------------------------------------------------------------------
 // >> Partials
 // --------------------------------------------------------------------------
@@ -119,8 +115,6 @@ scss/
 // --------------------------------------------------------------------------
 @import 'compatibility/ms/ie11';
 @import 'compatibility/ms/ie10';
-@import 'compatibility/ms/ie9';
-@import 'compatibility/ms/ie8';
 @import 'compatibility/chrome';
 @import 'compatibility/ff';
 @import 'compatibility/safari';
