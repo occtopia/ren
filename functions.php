@@ -134,7 +134,7 @@ function create_post_type()
      'labels' => array(
      'name' => __('Custom Post Name', 'psmark1'), // Rename these to suit
      'singular_name' => __('Custom Post', 'psmark1'),
-     'add_new' => __('Add New', 'occtopia'),
+     'add_new' => __('Add New', 'psmark1'),
      'add_new_item' => __('Add New Custom Post', 'psmark1'),
      'edit' => __('Edit', 'psmark1'),
      'edit_item' => __('Edit Custom Post', 'psmark1'),
@@ -179,12 +179,12 @@ function build_taxonomies() {
 // --------------------------------------------------------------------------
 
 // Add Actions
-add_action( 'init', 'occtopia_scripts' ); // Add Custom Scripts to wp_head
-add_action( 'init', 'occtopia_styles' ); // Add Custom Scripts to wp_head
+add_action( 'init', 'psmark1_scripts' ); // Add Custom Scripts to wp_head
+add_action( 'init', 'psmark1_styles' ); // Add Custom Scripts to wp_head
 add_action( 'init', 'disable_wp_emojicons' ); // Disable those dreadful Wordpress emojis
 //add_action( 'admin_init', 'role_lower_admin_hide' );
 add_action( 'init', 'register_my_menus' );
-add_action( 'init', 'create_post_type_portfolio'); // Add our HTML5 Blank Custom Post Type
+add_action( 'init', 'create_post_type'); // Add our HTML5 Blank Custom Post Type
 add_action( 'wp_enqueue_styles', 'enqueue_my_styles_and_scripts' );
 
 // Remove Actions
