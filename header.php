@@ -17,8 +17,8 @@
     <!-- Open Graph -->
     <meta property="og:title" content="The page title">
     <meta property="og:description" content="The page description.">
-    <meta property="og:image" content="">
-    <meta property="og:image:url" content="">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fbImg.png" />
+    <meta property="og:image:url" content="<?php echo get_template_directory_uri(); ?>/assets/img/fbImg.png" />
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
@@ -41,7 +41,7 @@
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/mstile-144x144.png">
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/img/icons/mstile-150x150.png">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="application-name" content="">
+    <meta name="application-name" content="The page title">
 
     <!-- iOS -->
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/assets/img/icons/apple-touch-icon.png">
