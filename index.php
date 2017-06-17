@@ -1,5 +1,17 @@
 <?php get_header(); ?>
 
-<?php get_template_part('loop'); ?>
+  <!-- main.wrapper -->
+  <main class="wrapper">
+
+    <!-- section -->
+    <section>
+
+    <?php get_template_part('loop'); ?>
+
+    <!-- /section -->
+    </section>
+
+  </main>
+  <!-- /main.wrapper -->
 
 <?php get_footer(); ?>
