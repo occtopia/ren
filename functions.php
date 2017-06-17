@@ -22,7 +22,7 @@ if (function_exists( 'add_theme_support' ) )
  add_image_size( 'custom-size', 1500, 500, true ); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
  // Add Localization Support
- load_theme_textdomain( 'psmark1', get_template_directory() . '/languages' );
+ load_theme_textdomain( 'slate', get_template_directory() . '/languages' );
 }
 
 function register_my_menus() {
@@ -40,7 +40,7 @@ function register_my_menus() {
  // --------------------------------------------------------------------------
 
 // Load JavaScript
-function psmark1_scripts()
+function slate_scripts()
 {
   if ( $GLOBALS['pagenow'] != 'wp-login.php' && !is_admin() ) {
 
@@ -49,12 +49,12 @@ function psmark1_scripts()
     wp_enqueue_script('jquery');
 
     // Enqueue custom code or plugins
-    wp_register_script( 'psmark1-js', get_template_directory_uri() . '/assets/js/min/custom.min.js', array( 'jquery' ), '1.0', true );
-    wp_enqueue_script( 'psmark1-js' );
+    wp_register_script( 'slate-js', get_template_directory_uri() . '/assets/js/min/custom.min.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'slate-js' );
 
     // Enqueue init plugins/options
-    wp_register_script( 'psmark1-init', get_template_directory_uri() . '/assets/js/min/init.min.js', array( 'jquery' ), '1.0', true );
-    wp_enqueue_script( 'psmark1-init' );
+    wp_register_script( 'slate-init', get_template_directory_uri() . '/assets/js/min/init.min.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'slate-init' );
   }
 
   // Enqueue conditional JavaScript
@@ -77,12 +77,12 @@ function dequeue_jquery_migrate( &$scripts ) {
 // --------------------------------------------------------------------------
 
 // Load Stylesheets
-function psmark1_styles()
+function slate_styles()
 {
   if ( $GLOBALS['pagenow'] != 'wp-login.php' && !is_admin() ) {
 
-    wp_register_style( 'psmark1-styles', get_template_directory_uri() . '/assets/css/min/main.min.css', array(), '1.0', 'all' );
-    wp_enqueue_style( 'psmark1-styles' );
+    wp_register_style( 'slate-styles', get_template_directory_uri() . '/assets/css/min/main.min.css', array(), '1.0', 'all' );
+    wp_enqueue_style( 'slate-styles' );
 
     // Uncomment to enqueue old IE-specific stylesheets...if you're into that sort of thing.
     // wp_enqueue_style( 'ie9-styles', get_template_directory_uri().'/assets/css/min/ie9.min.css', array(), '1.0', 'all' );
@@ -96,7 +96,7 @@ function psmark1_styles()
 }
 
 // Remove "text/css" from enqueued stylesheets
-function psmark1_style_remove( $tag )
+function slate_style_remove( $tag )
 {
    return preg_replace( '~\s+type=["\'][^"\']++["\']~', '', $tag );
 }
@@ -132,18 +132,18 @@ function create_post_type()
   register_post_type('custom', // Register Custom Post Type
     array(
      'labels' => array(
-     'name' => __('Custom Post Name', 'psmark1'), // Rename these to suit
-     'singular_name' => __('Custom Post', 'psmark1'),
-     'add_new' => __('Add New', 'psmark1'),
-     'add_new_item' => __('Add New Custom Post', 'psmark1'),
-     'edit' => __('Edit', 'psmark1'),
-     'edit_item' => __('Edit Custom Post', 'psmark1'),
-     'new_item' => __('New Custom Post', 'psmark1'),
-     'view' => __('View', 'psmark1'),
-     'view_item' => __('View Custom Post', 'psmark1'),
-     'search_items' => __('Search Custom Posts', 'psmark1'),
-     'not_found' => __('No Custom Posts found', 'psmark1'),
-     'not_found_in_trash' => __('No Custom Posts found in Trash', 'psmark1')
+     'name' => __('Custom Post Name', 'slate'), // Rename these to suit
+     'singular_name' => __('Custom Post', 'slate'),
+     'add_new' => __('Add New', 'slate'),
+     'add_new_item' => __('Add New Custom Post', 'slate'),
+     'edit' => __('Edit', 'slate'),
+     'edit_item' => __('Edit Custom Post', 'slate'),
+     'new_item' => __('New Custom Post', 'slate'),
+     'view' => __('View', 'slate'),
+     'view_item' => __('View Custom Post', 'slate'),
+     'search_items' => __('Search Custom Posts', 'slate'),
+     'not_found' => __('No Custom Posts found', 'slate'),
+     'not_found_in_trash' => __('No Custom Posts found in Trash', 'slate')
     ),
    'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
    'has_archive' => true,
@@ -183,8 +183,8 @@ function build_taxonomies() {
 // --------------------------------------------------------------------------
 
 // Add Actions
-add_action( 'init', 'psmark1_scripts' ); // Add Custom Scripts to wp_head
-add_action( 'init', 'psmark1_styles' ); // Add Custom Scripts to wp_head
+add_action( 'init', 'slate_scripts' ); // Add Custom Scripts to wp_head
+add_action( 'init', 'slate_styles' ); // Add Custom Scripts to wp_head
 add_action( 'init', 'disable_wp_emojicons' ); // Disable those dreadful Wordpress emojis
 //add_action( 'admin_init', 'role_lower_admin_hide' );
 add_action( 'init', 'register_my_menus' );
@@ -200,10 +200,10 @@ remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 ); // Remove oEmbe
 remove_action( 'wp_head', 'wp_resource_hints', 2 ); // Remove ajax.googleapis.com DNS prefetch
 
 // Add Filters
-add_filter( 'style_loader_tag', 'psmark1_style_remove' ); // Remove 'text/css' from enqueued stylesheets
+add_filter( 'style_loader_tag', 'slate_style_remove' ); // Remove 'text/css' from enqueued stylesheets
 add_filter( 'show_admin_bar', '__return_false' ); // Hide Admin Bar
-add_filter( 'body_class', 'psmark1_body_class', 10, 2 ); // Remove body classes and create white list
-add_filter( 'nav_menu_css_class', 'psmark1_css_attributes_filter', 100, 1 ); // Remove navigation <li> injected classes
+add_filter( 'body_class', 'slate_body_class', 10, 2 ); // Remove body classes and create white list
+add_filter( 'nav_menu_css_class', 'slate_css_attributes_filter', 100, 1 ); // Remove navigation <li> injected classes
 add_filter( 'script_loader_tag', 'clean_script_tag' ); // Remove type="text/javascript" from script tags
 add_filter( 'style_loader_tag', 'remove_style_id' ); // Remove id from stylesheets
 
@@ -226,7 +226,7 @@ function remove_width_attribute( $html ) {
 // Filter: Remove body classes & create whitelist
 // Via Geert on wordpress.stackexchange.com/questions/15850/remove-classes-from-body-class
 
-function psmark1_body_class( $wp_classes, $extra_classes ) {
+function slate_body_class( $wp_classes, $extra_classes ) {
 
   // List of the only WP generated classes allowed
   $whitelist = array( 'portfolio', 'home', 'error404' );
