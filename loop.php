@@ -9,7 +9,7 @@
 
 	<?php endwhile; ?>
 
-	<?php require('inc/pagination.inc.php'); ?>
+  <?php get_template_part('inc/component', 'pagination'); ?>
 
 	<?php else : ?>
 
