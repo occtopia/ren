@@ -1,14 +1,14 @@
 {
-  "name": "slate",
+  "name": "ren",
   "version": "1.0.0",
-  "description": "Wordpress starter theme that cuts all of the fat",
+  "description": "Ren is a Wordpress starter theme that cuts all of the fat",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/positivespacegroup/Slate.git"
+    "url": "https://github.com/positivespacegroup/ren.git"
   },
   "keywords": [
     "bourbon",
@@ -20,7 +20,7 @@
   ],
   "author": "Positive Space LLC/Jason Occhipinti",
   "license": "MIT",
-  "homepage": "https://github.com/positivespacegroup/Slate.git",
+  "homepage": "https://github.com/positivespacegroup/ren.git",
   "devDependencies": {
     "bourbon": "^5.0.0",
     "bourbon-neat": "^2.0.0",
