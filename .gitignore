@@ -8,3 +8,5 @@ assets/css/.smbdeleteAAA1b3385f
 
 .*
 !/.gitignore
+
+*.codekit3

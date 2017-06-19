@@ -1,4 +1,14 @@
-@charset 'utf-8';
+/*
+	Theme Name: Ren
+	Theme URI: https://github.com/positivespacegroup/ren.git
+	Description: Ren Wordpress Theme
+	Version: 1.0
+	Author: Jason Occhipinti (@occtopia) via Positive Space LLC (@positivespacegr)
+	Author URI: http://www.occtopia.com
+	Tags: Blank
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
 
 // --------------------------------------------------------------------------
 // >> Table of Contents
@@ -6,63 +16,69 @@
 /*
 scss/
 |
-|– base/
-|   |– _animations.scss  # Animations
-|   |– _base.scss        # Base file imports
-|   |– _containers.scss  # Layout containers
-|   |– _forms.scss       # Forms and elements
-|   |– _fudge.scss       # Overrides
-|   |– _tables.scss      # Reset/normalize
-|   |– _typography.scss  # Typography rules
-|   `– _print.scss       # Print rules
+|– vendors/
+|   |– _bourbon.scss         # Bourbon includes
+|   |– _neat-settings.scss   # Bourbon Neat settings
+|   |– _neat.scss            # Bourbon Neat includes
+|   `– _normalize.scss       # Normalize
 |
 |– abstracts/
-|   |– _variables.scss   # Sass Variables
-|   |– _functions.scss   # Sass Functions
-|   |– _extends.scss     # Sass Extends
-|   `– _mixins.scss      # Sass Mixins
+|   |– _variables.scss      # Sass Variables
+|   |– _functions.scss      # Sass Functions
+|   |– _extends.scss        # Sass Extends
+|   `– _mixins.scss         # Sass Mixins
+|
+|– base/
+|   |– _animations.scss      # Animations
+|   |– _base.scss            # Base file imports
+|   |– _forms.scss           # Forms and elements
+|   |– _fudge.scss           # Overrides
+|   |– _layout.scss          # Layout items/containers
+|   |– _lists.scss           # List styles
+|   |– _print.scss           # Print styles
+|   |– _tables.scss          # Table and cell styles
+|   |– _typography.scss      # Typography rules
+|   `– _print.scss           # Print rules
+|
+|– components/
+|   |– _buttons.scss         # Buttons
+|   |– _media.scss           # Image/video element styles
+|   |– _navigation.scss      # Navigation
+|   `– _pagination.scss      # Pagination
+|
+|– partials/
+|   |– _header.scss          # Header
+|   |– _footer.scss          # Footer
+|   |– _sidebar.scss         # Sidebar
+|   `– _forms.scss           # Form sections
+|
+|– pages/
+|   |– _contact.scss         # Contact specific styles
+|   `– _home.scss            # Home specific styles
+|
+|– themes/
+|   `– _theme.scss           # Default theme
 |
 |– compatibility/
 |   `– ms/
-|   |   |- _ie11.scss    # Internet Explorer 11 Compatibility
-|   |   |- _ie10.scss    # Internet Explorer 10 Compatibility
-|   |   |- _ie9.scss     # Internet Explorer 9  Compatibility
-|   |   `– _ie8.scss     # Internet Explorer 8  Compatibility
+|   |   |- _ie11.scss        # Internet Explorer 11 Compatibility
+|   |   |- _ie10.scss        # Internet Explorer 10 Compatibility
+|   |   |- _ie9.scss         # Internet Explorer 9  Compatibility
+|   |   `– _ie8.scss         # Internet Explorer 8  Compatibility
 |   |
-|   |– _chrome.scss      # Chrome  Compatibility
-|   |– _ff.scss          # Firefox Compatiblity
-|   `– _safari.scss      # Safari  Compatibility
+|   |– _chrome.scss          # Chrome  Compatibility
+|   |– _ff.scss              # Firefox Compatiblity
+|   `– _safari.scss          # Safari  Compatibility
 |
-|– components/
-|   |– _buttons.scss     # Buttons
-|   `– _navigation.scss  # Navigation
-|
-|– partials/
-|   |– _header.scss      # Header
-|   |– _footer.scss      # Footer
-|   |– _sidebar.scss     # Sidebar
-|   `– _forms.scss       # Forms
-|
-|– pages/
-|   |– _home.scss        # Home specific styles
-|   `– _contact.scss     # Contact specific styles
-|
-|– themes/
-|   `– _theme.scss       # Default theme
-|
-|– vendors/
-|   `– _normalize.scss   # Normalize
-|
-|
-`– main.scss             # primary Sass file
+`– main.scss                 # primary Sass file
 */
 
 // --------------------------------------------------------------------------
 // >> Vendor Styles
 // --------------------------------------------------------------------------
-@import 'vendor/bourbon-master/bourbon';
-@import 'vendor/neat-grid-settings';
-@import 'vendor/neat-master/neat';
+@import 'vendor/bourbon';
+@import 'vendor/neat-settings';
+@import 'vendor/neat';
 @import 'vendor/normalize';
 
 // --------------------------------------------------------------------------

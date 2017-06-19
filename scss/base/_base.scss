@@ -1,14 +1,19 @@
+
+@import "animations";
+@import "fudge";
+
 // Bitters 1.0.0
 // http://bitters.bourbon.io
 // Copyright 2013-2015 thoughtbot, inc.
 // MIT License
 
-@import "animations";
-@import "containers";
 @import "forms";
-@import "fudge";
+@import "layout";
+@import "lists";
 @import "tables";
 @import "typography";
+
+
 @import "print";
 
 a[href], input[type='submit'], input[type='image'], label[for], select, button, {
