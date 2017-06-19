@@ -1,5 +1,4 @@
 # Ren Wordpress Starter Theme
----
 
 "Ren" [stands for "clean" in Norwegian.](https://www.google.com/search?q=norwegian+for+clean&oq=norwegian+for+clean). 
 
@@ -21,7 +20,6 @@ As expected, most of the magic happens in the functions.php file, so enable or d
 
 
 ## SASS
----
 
 The structure is based on the [7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern):
 
@@ -36,9 +34,8 @@ The structure is based on the [7-1 pattern](https://sass-guidelin.es/#the-7-1-pa
 
 
 ## Bourbon, Neat, Bitters
----
 
-We're using Thoughtbot's Bourbon, Neat, and Bitters as our framework. These are all much lighter than other frameworks like Bootstrap and Foundation, and allow us to organize media queries within our selectors.
+We're using [Thoughtbot's](https://thoughtbot.com/) [Bourbon](http://bourbon.io/), [Neat](http://neat.bourbon.io/), and [Bitters](http://bitters.bourbon.io/) as our framework. These are all much lighter than other frameworks and allow us to organize media queries within our selectors.
 
 ### Bourbon and Neat
 Within the /vendor/ folder is a copy of \_bourbon.scss and \.neat.scss. These files link to their respective library in whatever package manager you prefer (npm, bower, w/e)...just change the links accordingly. Neat's \_settings.scss is an exception to this, as these should be changed on the fly to accomodate you own grid and container preferences.
