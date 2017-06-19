@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
-  <!-- main.wrapper -->
   <main class="wrapper">
 
     <section>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <article>
 
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -34,6 +33,5 @@
     </section>
 
 	</main>
-  <!-- main.wrapper -->
 
 <?php get_footer(); ?>
