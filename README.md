@@ -41,22 +41,22 @@ We're using [Thoughtbot's](https://thoughtbot.com/) [Bourbon](http://bourbon.io/
 Within the /vendor/ folder is a copy of \_bourbon.scss and \.neat.scss. These files link to their respective library in whatever package manager you prefer (npm, bower, w/e)...just change the links accordingly. Neat's \_settings.scss is an exception to this, as these should be changed on the fly to accomodate you own grid and container preferences.
 
 + Bourbon
-  + ```/vendor/\_bourbon.scss```
+  + ```/vendor/_bourbon.scss```
 + Neat
-  + ```/vendor/\_neat-settings.scss```
-  + ```/vendor/\_neat.scss```
+  + ```/vendor/_neat-settings.scss```
+  + ```/vendor/_neat.scss```
 
 ### Bitters
 Bitters files are contained within the /abstracts/, /base/, and /components/ folder. You can override or overwrite them. Either way, they're a good starting point.
 
 + Bitters
-  + ```/abstracts/\_variables.scss```
-  + ```/base/\_base.scss```
-  + ```/base/\_forms.scss```
-  + ```/base/\_layout.scss```
-  + ```/base/\_lists.scss```
-  + ```/base/\_media.scss```
-  + ```/base/\_tables.scss```
-  + ```/base/\_typography.scss```
-  + ```/components/\_buttons.scss```
+  + ```/abstracts/_variables.scss```
+  + ```/base/_base.scss```
+  + ```/base/_forms.scss```
+  + ```/base/_layout.scss```
+  + ```/base/_lists.scss```
+  + ```/base/_media.scss```
+  + ```/base/_tables.scss```
+  + ```/base/_typography.scss```
+  + ```/components/_buttons.scss```
 
