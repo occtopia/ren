@@ -21,7 +21,7 @@ As expected, most of the magic happens in the functions.php file, so enable or d
 
 ## SASS
 
-The structure is based on the [7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern):
+The structure is based on the [7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern) with the addition of a folder for browser fixes:
 
 + ```/abstracts/```: variables, mixins, extends
 + ```/base/```: base styling for typography, containers, tables, etc.
