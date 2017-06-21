@@ -30,7 +30,7 @@
 
 			<?php the_content(); ?>
 
-			<?php the_tags( __( 'Tags: ', 'slate' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+			<?php the_tags( __( 'Tags: ', 'ren' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
 			<p>Categorized in <?php the_category(', '); ?></p>
 
