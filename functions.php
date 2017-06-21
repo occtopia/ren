@@ -10,7 +10,7 @@
 // --------------------------------------------------------------------------
 
 if (function_exists( 'add_theme_support' )){
-  
+
  // Add Menu Support
  add_theme_support( 'menus' );
 
@@ -48,17 +48,17 @@ function ren_scripts() {
     wp_enqueue_script( 'jquery' );
 
     // Enqueue custom code or plugins
-    wp_register_script( 'ren-js', get_template_directory_uri() . '/assets/js/min/custom.min.js', array( 'jquery' ), '1.0', true );
+    wp_register_script( 'ren-js', get_template_directory_uri() . '/js/min/custom.min.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'ren-js' );
 
     // Enqueue init plugins/options
-    wp_register_script( 'ren-init', get_template_directory_uri() . '/assets/js/min/init.min.js', array( 'jquery' ), '1.0', true );
+    wp_register_script( 'ren-init', get_template_directory_uri() . '/js/min/init.min.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'ren-init' );
   }
 
   // Enqueue conditional JavaScript
   elseif ( is_page( 'pagename' ) ) { // If page matches page name
-    wp_register_script( 'scriptname', get_template_directory_uri() . '/assets/js/min/scriptname.min.js', array( 'jquery' ), '1.0' ); // Load Conditional JavaScript
+    wp_register_script( 'scriptname', get_template_directory_uri() . '/js/min/scriptname.min.js', array( 'jquery' ), '1.0' ); // Load Conditional JavaScript
     wp_enqueue_script( 'scriptname' );
   }
 }
@@ -79,16 +79,16 @@ function dequeue_jquery_migrate( &$scripts ) {
 function ren_styles() {
   if ( $GLOBALS['pagenow'] != 'wp-login.php' && !is_admin() ) {
 
-    wp_register_style( 'ren-styles', get_template_directory_uri() . '/assets/css/min/main.min.css', array(), '1.0', 'all' );
+    wp_register_style( 'ren-styles', get_template_directory_uri() . 'style.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'ren-styles' );
 
     // Uncomment to enqueue old IE-specific stylesheets...if you're into that sort of thing.
-    // wp_enqueue_style( 'ie9-styles', get_template_directory_uri().'/assets/css/min/ie9.min.css', array(), '1.0', 'all' );
+    // wp_enqueue_style( 'ie9-styles', get_template_directory_uri().'/css/min/ie9.min.css', array(), '1.0', 'all' );
     // wp_style_add_data( 'ie9-styles', 'conditional', 'lte IE 9' );
   }
 
   elseif ( is_page( 'pagename' ) ) {
-     wp_register_style( 'stylename', get_template_directory_uri() . '/assets/css/stylename.css', array(), '1.0', 'all' ); // Conditional script(s)
+     wp_register_style( 'stylename', get_template_directory_uri() . '/css/stylename.css', array(), '1.0', 'all' ); // Conditional script(s)
      wp_enqueue_style( 'stylename' );}
 }
 
@@ -99,7 +99,7 @@ function ren_style_remove( $tag ) {
 
 // Remove dreadful Wordpress Emojis *** Affects inline editing dialogue box at least up to 4.6.X ***
 function disable_wp_emojicons() {
-  
+
   // Emoji-related actions
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
   remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
