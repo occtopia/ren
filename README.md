@@ -60,12 +60,12 @@ Bitters files are contained within the /abstracts/, /base/, and /components/ fol
   + ```/base/_typography.scss```
   + ```/components/_buttons.scss```
   
-# Inspiration & Shout-outs
+## Inspiration & Shout-outs
 A few themes inspired me to build this:
 
   + [HTML5Blank by Todd Motto](http://html5blank.com/) and [Underscores by Automattic](http://underscores.me/): two nice, clean starter Wordpress themes
   + [Rapid Springs by Paul Stonier](https://github.com/pstonier/rapid-springs): This theme actually moved me to using Bourbon, Neat, and Bitters into my own workflow.
   
-# License
+## License
 100% free to use and redistribute, and licensed under the MIT license. Any other snippets taken are licensed by their respective creators.
 
