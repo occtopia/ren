@@ -38,13 +38,15 @@ The structure is based on the [7-1 pattern](https://sass-guidelin.es/#the-7-1-pa
 We're using [Thoughtbot's](https://thoughtbot.com/) [Bourbon](http://bourbon.io/), [Neat](http://neat.bourbon.io/), and [Bitters](http://bitters.bourbon.io/) as our framework. These are all much lighter than other frameworks and allow us to organize media queries within our selectors.
 
 ### Bourbon and Neat
-Within the ```/vendor/``` folder is a copy of \_bourbon.scss and ```\.neat.scss```. These files link to their respective library in whatever package manager you prefer (npm, bower, w/e)...just change the links accordingly. Neat's ```\_settings.scss``` is an exception to this, as these should be changed on the fly to accomodate you own grid and container preferences.
+Within the ```/vendor/``` folder is a copy of \_bourbon.scss and ```\.neat.scss```. These files link to their respective library in whatever package manager you prefer (npm, bower, w/e)...just change the links accordingly. Neat's ```\_settings.scss``` is an exception to this, as these should be changed on the fly to accomodate your own grid and container preferences.
 
 + Bourbon
   + ```/vendor/_bourbon.scss```
 + Neat
   + ```/vendor/_neat-settings.scss```
   + ```/vendor/_neat.scss```
+
+** *Take note: Neat 2.0 uses ```calc()``` to create it's grid elements widths. While ```calc()``` has fairly good support (at the time of this writing, [caniuse.com](http://caniuse.com/#feat=calc) has it 94%) you may need to include some kind of polyfill if you're supporting older, legacy browsers like IE8.* **
 
 ### Bitters
 Bitters files are contained within the ```/abstracts/```, ```/base/```, and ```/components/``` folder. You can override or overwrite them. Either way, they're a good starting point.
