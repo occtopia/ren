@@ -180,7 +180,7 @@ add_action( 'init', 'ren_styles' ); // Add Custom Scripts to wp_head
 add_action( 'init', 'disable_wp_emojicons' ); // Disable those dreadful Wordpress emojis
 // add_action( 'admin_init', 'role_lower_admin_hide' );
 add_action( 'init', 'register_my_menus' );
-add_action( 'init', 'create_post_type'); // Add our HTML5 Blank Custom Post Type
+add_action( 'init', 'create_post_type'); // Add our Custom Post Type
 add_action( 'wp_enqueue_styles', 'enqueue_my_styles_and_scripts' );
 
 // Remove Actions
