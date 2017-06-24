@@ -46,7 +46,7 @@ Within the ```/vendor/``` folder is a copy of \_bourbon.scss and ```\.neat.scss`
   + ```/vendor/_neat-settings.scss```
   + ```/vendor/_neat.scss```
 
-** *Take note: Neat 2.0 uses ```calc()``` to create it's grid elements widths. While ```calc()``` has fairly good support (at the time of this writing, [caniuse.com](http://caniuse.com/#feat=calc) has it 94%) you may need to include some kind of polyfill if you're supporting older, legacy browsers like IE8.* **
+*Take note: Neat 2.0 uses ```calc()``` to create it's grid elements widths. While ```calc()``` has fairly good support (at the time of this writing, [caniuse.com](http://caniuse.com/#feat=calc) has it 94%) you may need to include some kind of polyfill if you're supporting older, legacy browsers like IE8.*
 
 ### Bitters
 Bitters files are contained within the ```/abstracts/```, ```/base/```, and ```/components/``` folder. You can override or overwrite them. Either way, they're a good starting point.
