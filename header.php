@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
     <meta name="description" content="The page description.">
-    <meta name="keywords" content="keyword1, keyword2 , keyword3">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
     <meta name="author" content="Joe Somebody">
 
     <!-- Open Graph -->
