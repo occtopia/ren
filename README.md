@@ -1,6 +1,6 @@
 # Ren Wordpress Starter Theme
 
-"Ren" [stands for "clean" in Norwegian.](https://www.google.com/search?q=norwegian+for+clean&oq=norwegian+for+clean). 
+"Ren" [stands for "clean" in Norwegian.](https://www.google.com/search?q=norwegian+for+clean&oq=norwegian+for+clean)
 
 It's no secret that Wordpress adds a lot of extra markup to your theme right out of the gate. Ren is a starter theme that strips just about everything extreneous, including:
 
