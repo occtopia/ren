@@ -79,7 +79,7 @@ function dequeue_jquery_migrate( &$scripts ) {
 function ren_styles() {
   if ( $GLOBALS['pagenow'] != 'wp-login.php' && !is_admin() ) {
 
-    wp_register_style( 'ren-styles', get_template_directory_uri() . 'style.css', array(), '1.0', 'all' );
+    wp_register_style( 'ren-styles', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
     wp_enqueue_style( 'ren-styles' );
 
     // Uncomment to enqueue old IE-specific stylesheets...if you're into that sort of thing.
